@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    padding: 30px;
+    height: 600px;
+    max-width: 1100px;
+    color: rgb(2, 2, 3);
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+}
+
+.profile-card>*:not(.contacts-form) {
+    grid-column: 1;
+}
+
+.profile-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.talent-list {
+    display: block;
+    padding: 15px;
+}
+
+.contacts-form {
+    height: 325px;
+    background-color: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    grid-column: 2;
+    grid-row: 1 / span 10;
+}
+
+.contacts-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: border-color 0.3 ease;
+}
+
+.contacts-form input:focus,
+.contacts-form textarea:focus {
+    border-color: darkslategray;
+    outline: none;
+}
+
+.contacts-form button {
+    width: 100%;
+    padding: 5px;
+    background-color: #857979;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3 ease-in-out;
+}
+
+.contacts-form button:hover {
+    background-color: black;
+}
